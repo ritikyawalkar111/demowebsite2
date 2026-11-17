@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Godavari Sports Club – Demo</title>
+  <style>
+    :root {
+      --pitch: #1f5d3a;
+      --deep: #123824;
+      --chalk: #f6f4ec;
+      --gold: #e9b44c;
+      --muted: #55655b;
+      --line: #d9d6c8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--chalk);
+      color: var(--deep);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 18px 6vw;
+      background: var(--deep);
+      color: var(--chalk);
+    }
+    header strong { font-size: 1.15rem; }
+    nav a {
+      margin-left: 22px;
+      color: #c8d6cc;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      background: var(--pitch);
+      color: var(--chalk);
+      padding: 90px 6vw 80px;
+      border-bottom: 8px solid var(--gold);
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      max-width: 11em;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hero p {
+      margin-top: 18px;
+      max-width: 32em;
+      color: #d4e2d9;
+      font-size: 1.1rem;
+    }
+    .hero a {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 28px;
+      background: var(--gold);
+      color: var(--deep);
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    section { padding: 56px 6vw; max-width: 1000px; }
+    h2 { font-size: 1.7rem; margin-bottom: 16px; }
+    section p { max-width: 38em; color: var(--muted); }
+    .sports {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .sports li {
+      padding: 10px 20px;
+      border: 2px solid var(--pitch);
+      border-radius: 999px;
+      font-weight: 600;
+      color: var(--pitch);
+    }
+    table {
+      width: 100%;
+      max-width: 38em;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    th { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+    footer {
+      padding: 26px 6vw;
+      background: var(--deep);
+      color: #9db0a4;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>IT Sports Club</strong>
+    <nav>
+      <a href="#sports">Sports</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#join">Join</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Train hard. Play together.</h1>
+    <p>A community sports club for players of every age and level. Come for the game, stay for the team.</p>
+    <a href="#join">Join the club</a>
+  </div>
+
+  <section id="sports">
+    <h2>Sports we offer</h2>
+    <ul class="sports">
+      <li>Cricket</li>
+      <li>Football</li>
+      <li>Badminton</li>
+      <li>Table Tennis</li>
+      <li>Athletics</li>
+      <li>Kabaddi</li>
+    </ul>
+  </section>
+
+  <section id="schedule">
+    <h2>Weekly training schedule</h2>
+    <table>
+      <tr><th>Day</th><th>Sport</th><th>Time</th></tr>
+      <tr><td>Monday</td><td>Badminton</td><td>6:00 PM</td></tr>
+      <tr><td>Wednesday</td><td>Football</td><td>5:30 PM</td></tr>
+      <tr><td>Friday</td><td>Cricket</td><td>5:00 PM</td></tr>
+      <tr><td>Saturday</td><td>Athletics</td><td>7:00 AM</td></tr>
+    </table>
+  </section>
+
+  <section id="join">
+    <h2>Join us</h2>
+    <p>Visit the club ground during training hours and speak to a coach. Beginners are welcome.</p>
+  </section>
+
+  <footer>Demo project for deployment practice. This is not a real club website.</footer>
+</body>
+</html>

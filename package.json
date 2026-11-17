@@ -1,0 +1,9 @@
+{
+  "name": "sports-club-demo",
+  "version": "1.0.0",
+  "description": "Demo sports club website for deployment assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
